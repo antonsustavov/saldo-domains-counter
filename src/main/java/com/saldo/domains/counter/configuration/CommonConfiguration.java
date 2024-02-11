@@ -1,0 +1,15 @@
+package com.saldo.domains.counter.configuration;
+
+import java.util.Scanner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CommonConfiguration {
+
+  @Bean
+  public Scanner scanner() {
+    return new Scanner(System.in);
+  }
+
+}
